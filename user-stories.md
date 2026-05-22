@@ -1,38 +1,21 @@
-# User Stories
+## MVP User Stories
 
-1. Upload CSV File: As a user,  I want to upload a CSV file of sales leads,  so that I can begin cleaning and reviewing my lead data.
+1. As a user, I want to upload a CRM export CSV, so that I can inspect messy lead/contact data.
 
-2. Validate Uploaded File: As a user, I want the app to check whether my uploaded file is valid,  so that I know if the file can be processed correctly.
+2. As a user, I want to view the CSV in a spreadsheet-like table, so that I can review my CRM data easily.
 
-3. Preview Uploaded Leads: As a user, I want to preview my uploaded leads in a spreadsheet-like table,  so that I can confirm the data imported correctly.
+3. As a user, I want duplicate leads/contacts to be flagged, so that I can avoid repeated or conflicting records.
 
-4. Detect Missing Fields: As a user, I want the app to identify missing names, emails, phone numbers, or company fields,  so that I know which leads are incomplete.
+4. As a user, I want stale leads to be flagged based on last activity date, so that I can identify records that may no longer be useful.
 
-5. Detect Invalid Emails: As a user, I want the app to flag invalid email addresses,  so that I can avoid importing bad contact data into my CRM.
+5. As a user, I want missing important fields to be flagged, so that I know which records are incomplete.
 
-6. Detect Invalid Phone Numbers: As a user,  I want the app to flag badly formatted or incomplete phone numbers,  so that I can fix contact information before export.
+6. As a user, I want invalid emails and suspicious phone numbers to be flagged, so that I can fix bad contact information.
 
-7. Detect Duplicate Leads: As a user, I want the app to detect duplicate leads,  so that I do not contact the same person or company multiple times.
+7. As a user, I want obvious fake/test records to be flagged, so that junk data can be removed.
 
-8. Standardize Lead Formatting: As a user, I want the app to standardize capitalization, spacing, and formatting, so that my lead list looks clean and consistent.
+8. As a user, I want problematic rows and cells to be highlighted, so that I can quickly find what needs fixing.
 
-9. Review Suggested Fixes: As a user, I want to review the app’s suggested fixes before applying them, so that I stay in control of the final data.
+9. As a user, I want a CRM hygiene summary, so that I can see the total number of stale, duplicate, incomplete, and suspicious records.
 
-10. Manually Edit Lead Data: As a user, I want to manually edit cells in the lead table,  so that I can fix data myself when needed.
-
-11. Accept or Reject Fixes: As a user, I want to accept or reject suggested changes, so that only the fixes I approve are applied.
-
-12. View Data Health Summary: As a user, I want to see a summary of the issues found in my CSV, so that I can quickly understand the overall quality of my data.
-
-13. Track Cleaning Progress: As a user, I want to see how many issues have been fixed and how many remain, so that I know when the file is ready to export.
-
-14. Export Cleaned CSV: As a user, I want to export the cleaned lead list as a CSV file,  
-so that I can upload it back into my CRM.
-
-15. Export Original vs Cleaned Data: As a user, I want the app to preserve the original uploaded data separately from the cleaned version, so that I can compare changes or recover the original file if needed.
-
-16. See Error Messages: As a user, I want clear error messages when something goes wrong, so that I understand what happened and how to fix it.
-
-17. Start a New Cleaning Session: As a user, I want to upload a new CSV after finishing one file, so that I can clean multiple lead lists.
-
-18. View Recent Uploads: As a user, I want to see my recently uploaded files, so that I can return to previous cleaning sessions.
+10. As a user, I want to export a cleaned CSV, so that I can re-import improved data into my CRM.
