@@ -19,3 +19,16 @@
 9. As a user, I want a CRM hygiene summary, so that I can see the total number of stale, duplicate, incomplete, and suspicious records.
 
 10. As a user, I want to export a cleaned CSV, so that I can re-import improved data into my CRM.
+
+
+## Future / Premium Capabilities
+- Save cleanup rules for repeated use
+- Larger CSV upload limits
+- Scheduled CRM hygiene reports
+- Salesforce/HubSpot direct integration
+- Team accounts and shared workspaces
+- Bulk merge suggestions
+- Advanced stale lead scoring
+- Audit logs of cleaned records
+- Privacy-first/local processing option
+- Custom CRM-specific import templates
