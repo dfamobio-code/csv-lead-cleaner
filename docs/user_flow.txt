@@ -1,0 +1,77 @@
+
+                          ┌─────────┐
+                          │  Start  │
+                          └────┬────┘
+                               │
+                               v
+                     ┌───────────────────┐
+                     │ Have an account?  │
+                     └───────┬─────┬─────┘
+                             │Yes  │No
+                             v     v
+                       ┌────────┐ ┌─────────┐
+                       │ Log in │ │ Sign up │
+                       └────┬───┘ └────┬────┘
+                            │          │
+                            └────┬─────┘
+                                 v
+                         ┌──────────────┐
+                         │ Upload CSV   │
+                         └──────┬───────┘
+                                │
+                                v
+                    ┌───────────────────────┐
+                    │ Preview / Map Columns │
+                    │ Example: Name, Email, │
+                    │ Phone, Company, CRM ID│
+                    └───────────┬───────────┘
+                                │
+                                v
+                         ┌──────────────┐
+                         │ Scan CSV for │
+                         │ Issues       │
+                         └──────┬───────┘
+                                │
+                                v
+                    ┌───────────────────────┐
+                    │ Review & Fix Issues   │
+                    │ - missing fields      │
+                    │ - duplicate leads     │
+                    │ - invalid emails      │
+                    │ - invalid phones      │
+                    │ - formatting problems │
+                    └───────────┬───────────┘
+                                │
+                                v
+                       ┌──────────────────┐
+                       │ Ready to export? │
+                       └──────┬─────┬─────┘
+                              │No   │Yes
+                              │     v
+                              │  ┌────────────────────┐
+                              │  │ Choose export type │
+                              │  └──────┬──────┬──────┘
+                              │         │      │
+                              │         │      │
+                              │         v      v
+                              │ ┌──────────────────┐  ┌────────────────────┐
+                              │ │ Export Update-   │  │ Export Full Clean  │
+                              │ │ Only CSV         │  │ CSV                │
+                              │ │ fixed rows only  │  │ whole cleaned file │
+                              │ └────────┬─────────┘  └─────────┬──────────┘
+                              │          │                      │
+                              │          └──────────┬───────────┘
+                              │                     v
+                              │             ┌──────────────┐
+                              │             │ Download CSV │
+                              │             └──────┬───────┘
+                              │                    │
+                              │                    v
+                              │                ┌───────┐
+                              │                │  End  │
+                              │                └───────┘
+                              │
+                              └────────────── back to
+                                           Review & Fix Issues
+
+

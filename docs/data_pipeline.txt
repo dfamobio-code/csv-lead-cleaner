@@ -1,0 +1,104 @@
+┌────────────────────┐
+│ User uploads CSV   │
+└─────────┬──────────┘
+          │
+          v
+┌────────────────────┐
+│ Basic file checks  │
+│                    │
+│ - Is it a CSV?     │
+│ - File size okay?  │
+│ - Has rows?        │
+│ - Has columns?     │
+└─────────┬──────────┘
+          │
+          v
+┌────────────────────────┐
+│ Preview & confirm      │
+│ fields                 │
+│                        │
+│ Example:               │
+│ Email Address → Email  │
+│ Mobile → Phone         │
+│ Company Name → Company │
+│ Lead ID → CRM ID       │
+└─────────┬──────────────┘
+          │
+          v
+┌────────────────────┐
+│ Parse CSV rows     │
+│                    │
+│ Convert each row   │
+│ into a lead record │
+└─────────┬──────────┘
+          │
+          v
+┌────────────────────┐
+│ Normalize fields   │
+│                    │
+│ - trim spaces      │
+│ - lowercase email  │
+│ - format phone     │
+│ - standardize names│
+└─────────┬──────────┘
+          │
+          v
+┌────────────────────┐
+│ Detect issues      │
+│                    │
+│ - missing fields   │
+│ - duplicate leads  │
+│ - invalid email    │
+│ - invalid phone    │
+│ - fake/test data   │
+│ - stale leads      │
+│ - formatting issues│
+└─────────┬──────────┘
+          │
+          v
+┌────────────────────┐
+│ Save results       │
+│                    │
+│ Database stores:   │
+│ - cleaned records  │
+│ - issue flags      │
+│ - suggested fixes  │
+└─────────┬──────────┘
+          │
+          v
+┌────────────────────┐
+│ User reviews issues│
+│                    │
+│ - accept fix       │
+│ - edit manually    │
+│ - ignore issue     │
+└─────────┬──────────┘
+          │
+          v
+┌────────────────────┐
+│ Ready to export?   │
+└──────┬───────┬─────┘
+       │ No    │ Yes
+       │       v
+       │  ┌────────────────────┐
+       │  │ Choose export type │
+       │  └──────┬──────┬──────┘
+       │         │      │
+       │         v      v
+       │ ┌──────────────────┐ ┌────────────────────┐
+       │ │ Update-only CSV  │ │ Full clean CSV     │
+       │ │                  │ │                    │
+       │ │ Only rows that   │ │ Entire cleaned     │
+       │ │ changed/fixed    │ │ dataset            │
+       │ └────────┬─────────┘ └─────────┬──────────┘
+       │          │                     │
+       │          └──────────┬──────────┘
+       │                     v
+       │             ┌──────────────┐
+       │             │ Download CSV │
+       │             └──────────────┘
+       │
+       └──────────── back to
+              User reviews issues
+
+
